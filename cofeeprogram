@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+int x,p;
+printf("enter cofee price and discount\n");
+scanf("%d %d",&x,&p);
+printf("the pice and discounts are:\n");
+printf("%d %d\n",x,p);
+while(x>=1 && x<10000)
+{
+    
+    if(x>1)
+    {
+        x=x-p;
+p=x*p/100;
+
+printf("%d %d\n",x,p);
+}
+else if(p==0)
+{
+    printf("FREE\n");
+    x=0;
+}
+}
+}
